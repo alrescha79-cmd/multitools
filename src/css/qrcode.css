@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    min-height: 100vh;
+    align-items: center;
+    background: tomato;
+    justify-content: center;
+}
+
+.back {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transition: all 0.3s ease;
+    fill: currentColor;
+    color: #000;
+}
+
+.btn-back {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.btn-back:hover{
+    scale: 1.2;
+}
+
+.qrcode {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 450px;
+    border-radius: 15px;
+    background-color: beige;
+}
+.qrcode-teks {
+    text-align: center;
+    margin: 1em;
+}
+.qrcode-teks h1 {
+    color: tomato;
+}
+.qrcode-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    width: 232px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 1em;
+    color: tomato;
+}
+input::placeholder {
+    color: rgba(255, 99, 71, 0.454);
+}
+input:focus {
+    outline: 1px solid tomato;
+}
+.btn-input {
+    border: none;
+    background-color: tomato;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.btn-input:hover {
+    background-color: #c35441;
+}
+#canvas-qr {
+    border: 1.5px solid tomato;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px 1px rgba(255, 99, 71, 0.548);
+    margin: 1em;
+    width: 232px;
+    height: 232px;
+}
+
+@media (max-width: 576px) {
+    .qrcode {
+        width: 300px;
+        height: 500px;
+    }
+}
