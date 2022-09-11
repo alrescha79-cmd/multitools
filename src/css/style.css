@@ -11,6 +11,7 @@
 body {
     margin: 0;
     padding: 0;
+    max-width: 1200px;
 }
 
 
@@ -154,7 +155,7 @@ body {
     display: flex;
     padding-top: 2em;
     padding-bottom: 2em;
-    height: 450px;
+    height: 100vh;
     width: 100%;
     justify-content: center;
     overflow: hidden;
@@ -181,7 +182,7 @@ body {
 }
 
 
-/* tes */
+/* tes animasi */
 @-webkit-keyframes mask-move {
     0% {
         transform: translateX(-10px);
@@ -222,14 +223,6 @@ body {
     }
 }
 
-.body {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
 
 .focus {
     justify-content: center;
@@ -244,10 +237,9 @@ body {
 
 .focus:before {
     content: "Multi Tools";
-    filter: blur(3px);
+    filter: blur(4px);
     font-size: 1em;
     text-align: center;
-    /* margin-left: 10px; */
 }
 
 .focus:after {
@@ -255,13 +247,13 @@ body {
     content: "";
     position: absolute;
     width: 100px;
-    height: calc(100% + 8px);
+    height: calc(100% + 6px);
     top: -4px;
     left: 0;
     border-top: 2px solid;
     border-bottom: 2px solid;
-    -webkit-animation: mask-move 1s linear infinite alternate;
-    animation: mask-move 1s linear infinite alternate;
+    -webkit-animation: mask-move 2s linear infinite alternate;
+    animation: mask-move 2s linear infinite alternate;
 }
 
 .focus--mask {
@@ -271,19 +263,18 @@ body {
     height: 100%;
     top: 0;
     left: 0;
-    background: beige;
-    -webkit-animation: mask-move 1s linear infinite alternate;
-    animation: mask-move 1s linear infinite alternate;
+    background: blanchedalmond;
+    -webkit-animation: mask-move 2s linear infinite alternate;
+    animation: mask-move 2s linear infinite alternate;
 }
 
 .focus--mask-inner {
     width: 300px;
     height: 100%;
-    /* background-color: #c35441; */
-    -webkit-animation: mask-inner-move 1s linear infinite alternate;
-    animation: mask-inner-move 1s linear infinite alternate;
+    -webkit-animation: mask-inner-move 2s linear infinite alternate;
+    animation: mask-inner-move 2s linear infinite alternate;
 }
-/* tes */
+/* tes animasi end */
 
 .row-teks .btn {
     border: none;
@@ -299,7 +290,6 @@ body {
 .side {
     width: 50%;
     padding-top: 2em;
-    /* background-color: cadetblue; */
 }
 .side-img {
     width: 350px;
@@ -386,7 +376,7 @@ body {
     border-radius: 5px;
     padding: 5px 10px;
 }
-.img-1 button:hover {
+.img-1 button:hover, .img-1 button:focus, .img-1 button:active {
     background-color: rgb(195, 84, 65);
 }
 /* card 2 */
@@ -691,7 +681,7 @@ body {
         z-index: 99;
         outline: 1px solid tomato;
         box-shadow: 2px 2px 5px 0px rgba(255, 99, 71, 0.548);
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(4px);
     }
     .nav-ul.popup {
         transform: translatey(25%);
@@ -703,7 +693,6 @@ body {
 
     .row {
         flex-wrap: wrap;
-        height: 700px;
     }
     .row-teks {
         width: 100%;

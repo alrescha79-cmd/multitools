@@ -10,6 +10,7 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal('.about');
+ScrollReveal().reveal('.focus--mask', { delay: 1000, easing: 'ease-in-out' });
 ScrollReveal().reveal('.about-teks' , {delay: 500, easing: 'ease'});
 ScrollReveal().reveal('.row-teks h2', { delay: 500, origin: 'left' });
 ScrollReveal().reveal('.row-teks header', { delay: 800, origin: 'right' });
