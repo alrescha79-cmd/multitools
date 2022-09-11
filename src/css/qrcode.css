@@ -15,9 +15,6 @@ body {
 }
 
 .back {
-    position: absolute;
-    top: 10px;
-    left: 10px;
     transition: all 0.3s ease;
     fill: currentColor;
     color: #000;
@@ -31,6 +28,12 @@ body {
 }
 .btn-back:hover{
     scale: 1.2;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .qrcode {

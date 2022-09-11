@@ -153,12 +153,13 @@ body {
 .row {
     display: flex;
     padding-top: 2em;
+    padding-bottom: 2em;
     height: 450px;
     width: 100%;
     justify-content: center;
     overflow: hidden;
     background-color: bisque;
-    margin-bottom: 2em;
+    margin-bottom: 15%;
 }
 
 .row-teks{
@@ -169,13 +170,121 @@ body {
     justify-content: center;
 
 }
-.row-teks h1,  h2, h5{
+.row-teks h2, h5{
     text-align: center;
+
 }
-.row-teks h1 {
+
+.row-teks header {
     color: tomato;
-    font-size: 3em;
+    /* font-size: 1em; */
 }
+
+
+/* tes */
+@-webkit-keyframes mask-move {
+    0% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        transform: translateX(170px);
+    }
+}
+
+@keyframes mask-move {
+    0% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        transform: translateX(170px);
+    }
+}
+
+@-webkit-keyframes mask-inner-move {
+    0% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(-170px);
+    }
+}
+
+@keyframes mask-inner-move {
+    0% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(-170px);
+    }
+}
+
+.body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.focus {
+    justify-content: center;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    color: tomato;
+    letter-spacing: 2px;
+    position: relative;
+    width: 300px; 
+    height: 70px;
+}
+
+.focus:before {
+    content: "Multi Tools";
+    filter: blur(3px);
+    font-size: 1em;
+    text-align: center;
+    /* margin-left: 10px; */
+}
+
+.focus:after {
+    font-size: 1rem;
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: calc(100% + 8px);
+    top: -4px;
+    left: 0;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    -webkit-animation: mask-move 1s linear infinite alternate;
+    animation: mask-move 1s linear infinite alternate;
+}
+
+.focus--mask {
+    overflow: hidden;
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: beige;
+    -webkit-animation: mask-move 1s linear infinite alternate;
+    animation: mask-move 1s linear infinite alternate;
+}
+
+.focus--mask-inner {
+    width: 300px;
+    height: 100%;
+    /* background-color: #c35441; */
+    -webkit-animation: mask-inner-move 1s linear infinite alternate;
+    animation: mask-inner-move 1s linear infinite alternate;
+}
+/* tes */
+
 .row-teks .btn {
     border: none;
     background-color: tomato;
@@ -190,6 +299,7 @@ body {
 .side {
     width: 50%;
     padding-top: 2em;
+    /* background-color: cadetblue; */
 }
 .side-img {
     width: 350px;
@@ -206,7 +316,7 @@ body {
 .about {
     width: 90%;
     border: 1.5px solid tomato;
-    margin: auto;
+    margin: 15% auto;
     box-sizing: border-box;
     border-radius: 10px;
 }

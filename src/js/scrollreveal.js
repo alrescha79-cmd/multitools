@@ -10,11 +10,12 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal('.about');
+ScrollReveal().reveal('.about-teks' , {delay: 500, easing: 'ease'});
 ScrollReveal().reveal('.row-teks h2', { delay: 500, origin: 'left' });
-ScrollReveal().reveal('.row-teks h1', { delay: 800, origin: 'right' });
+ScrollReveal().reveal('.row-teks header', { delay: 800, origin: 'right' });
 ScrollReveal().reveal('.row-teks h5', { delay: 1000, opacity: 0 });
 ScrollReveal().reveal('.btn', { delay: 1500, opacity: 0 });
-ScrollReveal().reveal('.side .side-img', { delay: 2000, opacity: 0 });
+ScrollReveal().reveal('.side .side-img img', { delay: 1200, opacity: 0 });
 ScrollReveal().reveal('.content-teks', { delay: 700, origin: 'bottom' });
 ScrollReveal().reveal('.content-card', { delay: 1000 });
 ScrollReveal().reveal('.content-card .card-1', { delay: 500, origin: 'left', duration: 1500 });
