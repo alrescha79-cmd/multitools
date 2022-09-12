@@ -11,7 +11,7 @@
 body {
     margin: 0;
     padding: 0;
-    max-width: 98vw;
+    max-width: 100vw;
 }
 
 
@@ -326,6 +326,7 @@ body {
 }
 .about-teks h2 {
     color: tomato;
+    text-align: center;
 }
 /* about end */
 
