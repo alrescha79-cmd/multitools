@@ -44,7 +44,7 @@ body {
     color: maroon;
     padding: 10px;
 }
-.nav-ul li a:hover {
+.nav-ul li a:hover, .nav-ul li a:active, .nav-ul li a:focus {
     color: tomato;
 }
 
@@ -57,7 +57,7 @@ body {
     cursor: pointer;
     position: relative;
 }
-.fitur:hover {
+.fitur:hover, .fitur:active, .fitur:focus {
     background-color: #c35441;
     transition: all 0.3s ease;
     overflow: visible;
@@ -88,14 +88,14 @@ body {
 
 }
 
-.fitur-ul li:hover{
+.fitur-ul li:hover, .fitur-ul li:active, .fitur-ul li:focus {
     background-color: #c35441;
     color: white;
     border-radius: 10px;
     padding: 0 0 0 0;
     transition: all 0.2s ease;
 }
-.fitur-ul li a:hover {
+.fitur-ul li a:hover, .fitur-ul li a:active, .fitur-ul li a:focus {
     color: white;
 }
 
@@ -284,7 +284,7 @@ body {
     border-radius: 10px;
     cursor: pointer;
 }
-.row-teks .btn:hover {
+.row-teks .btn:hover, .row-teks .btn:active, .row-teks .btn:focus {
     background-color: rgb(195, 84, 65);
 }
 .side {
@@ -411,7 +411,7 @@ body {
     border-radius: 5px;
     padding: 5px 10px;
 }
-.img-2 button:hover {
+.img-2 button:hover, .img-2 button:focus, .img-2 button:active {
     background-color: rgb(195, 84, 65);
 }
 /* card 3 */
@@ -447,7 +447,7 @@ body {
     border-radius: 5px;
     padding: 5px 10px;
 }
-.img-3 button:hover {
+.img-3 button:hover, .img-3 button:focus, .img-3 button:active {
     background-color: rgb(195, 84, 65);
 }
 /* card 4 */
@@ -482,7 +482,7 @@ body {
     border-radius: 5px;
     padding: 5px 10px;
 }
-.img-4 button:hover {
+.img-4 button:hover, .img-4 button:focus, .img-4 button:active {
     background-color: rgb(195, 84, 65);
 }
 /* card 5 */
@@ -518,7 +518,7 @@ body {
     border-radius: 5px;
     padding: 5px 10px;
 }
-.img-5 button:hover {
+.img-5 button:hover, .img-5 button:focus, .img-5 button:active {
     background-color: rgb(195, 84, 65);
 }
 /* card 6 */
@@ -554,7 +554,7 @@ body {
     border-radius: 5px;
     padding: 5px 10px;
 }
-.img-6 button:hover {
+.img-6 button:hover, .img-6 button:focus, .img-6 button:active {
     background-color: #c35441;
 }
 /* card 7 */
@@ -611,7 +611,7 @@ body {
     color: rgba(255, 255, 255, 0.679);
     text-decoration: none;
 }
-.footer-link a:hover {
+.footer-link a:hover, .footer-link a:focus, .footer-link a:active {
     color: #ff6347;
 }
 
@@ -635,7 +635,7 @@ body {
     margin-right: 5px;
 }
 
-.footer-contact a:hover {
+.footer-contact a:hover, .footer-contact a:focus, .footer-contact a:active {
     color: #ff6347;
 }
 
