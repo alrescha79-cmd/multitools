@@ -21,8 +21,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 500px;
-    height: 450px;
+    width: 50%;
+    height:100%;
     border-radius: 15px;
     background-color: beige;
 }
@@ -33,8 +33,6 @@ body {
 .qrcode-teks header {
     color: tomato;
     display: flex;
-    /* background-color: aquamarine; */
-    /* padding: 0.5em; */
     font-size: 1.5em;
     font-weight: bold;
     justify-content: center;
@@ -50,8 +48,6 @@ header img:hover{
     transform: scale(1.2);
 }
 
-
-
 .qrcode-input {
     position: relative;
     display: flex;
@@ -61,7 +57,6 @@ header img:hover{
 }
 
 input {
-    /* position: relative; */
     width: 232px;
     height: 40px;
     border: none;
@@ -79,7 +74,7 @@ input:focus {
 }
 .btn-clear {
     position: absolute;
-    top: 5px;
+    top: 4px;
     right: 10px;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
@@ -87,6 +82,7 @@ input:focus {
     color: red;
     font-size: 2em;
     font-weight: bold;
+    background-color: transparent;
 }
 .btn-clear:hover, .btn-clear:focus, .btn-clear:active {
     transform: scale(1.2);
@@ -102,23 +98,23 @@ input:focus {
     margin-top: 10px;
     cursor: pointer;
 }
-.btn-input:hover {
+.btn-input:hover, .btn-input:focus, .btn-input:active {
     background-color: #c35441;
 }
 #canvas-qr {
     border: 1.5px solid tomato;
     border-radius: 10px;
     box-shadow: 2px 2px 6px 1px rgba(255, 99, 71, 0.548);
-    margin: 1em;
-    width: 174px;
-    height: 174px;
+    margin: 4px;
+    width: 276px;
+    height: 276px;
 }
 
 .btn-download {
     background-color: tomato;
     color: white;
     border: none;
-    width: 80%;
+    width: 232px;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
@@ -134,7 +130,7 @@ input:focus {
 
 @media (max-width: 576px) {
     .qrcode {
-        width: 300px;
-        height: 500px;
+        width: 80%;
+        height: 100%;
     }
 }
