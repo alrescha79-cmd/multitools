@@ -26,9 +26,19 @@ body {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.01);
 }
 
-.container h1 {
+.container header {
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: tomato;
-    text-align: center;
+}
+header img {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+header img:hover {
+    transform: scale(1.2);
 }
 
 .wrapper {

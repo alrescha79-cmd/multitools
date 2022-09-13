@@ -68,3 +68,10 @@ icons.forEach(icon => {
         }
     });
 });
+
+// back 
+const back = document.querySelector('header img');
+
+back.addEventListener('click', () => {
+    window.history.back();
+} );

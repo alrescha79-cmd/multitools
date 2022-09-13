@@ -75,3 +75,10 @@ fetch("https://api.apilayer.com/exchangerates_data/convert?to=IDR&from=EUR&amoun
         .catch(error => console.log('error', error));
     exchangeRateTxt.innerText = `${amountVal} ${fromCurrency.value} = ${totalExRate} ${toCurrency.value}`;
 };
+
+// back to previous page
+const back = document.querySelector('header img');
+
+back.addEventListener('click', () => {
+    window.history.back();
+} );

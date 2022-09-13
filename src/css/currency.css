@@ -33,11 +33,28 @@ body {
 .wrapper header {
     font-size: 28px;
     font-weight: 500;
-    text-align: center;
+    display: flex;
+    color: tomato;
+}
+
+.wrapper header img {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.wrapper header img:hover {
+    transform: scale(1.2);
 }
 
 .wrapper form {
     margin: 40px 0 20px 0;
+}
+
+.amount p {
+    color: tomato;
+}
+
+.drop-list {
+    color: tomato;
 }
 
 form :where(input, select, button) {
@@ -110,11 +127,17 @@ form .drop-list {
     cursor: pointer;
     margin-top: 30px;
     font-size: 22px;
+    transition: all 0.3s ease-in-out;
+}
+.drop-list .icon:hover {
+    color: #b1412d;
+    transform: scale(1.2);
 }
 
 form .exchange-rate {
     font-size: 17px;
     margin: 20px 0 30px;
+    color: tomato;
 }
 
 form button {
@@ -127,5 +150,5 @@ form button {
 }
 
 form button:hover {
-    background: rgb(177, 65, 45);
+    background: #b1412d;
 }

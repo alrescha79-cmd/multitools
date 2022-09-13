@@ -56,3 +56,10 @@ speechBtn.addEventListener("click", e =>{
         }
     }
 });
+
+// back to previous page
+const back = document.querySelector('header img');
+
+back.addEventListener('click', () => {
+    window.history.back();
+} );
