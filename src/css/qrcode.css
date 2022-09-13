@@ -14,27 +14,7 @@ body {
     justify-content: center;
 }
 
-.back {
-    transition: all 0.3s ease;
-    fill: currentColor;
-    color: #000;
-}
 
-.btn-back {
-    background-color: transparent;
-    border: none;
-    outline: none;
-    cursor: pointer;
-}
-.btn-back:hover{
-    scale: 1.2;
-}
-
-.flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .qrcode {
     display: flex;
@@ -50,10 +30,30 @@ body {
     text-align: center;
     margin: 1em;
 }
-.qrcode-teks h1 {
+.qrcode-teks header {
     color: tomato;
+    display: flex;
+    /* background-color: aquamarine; */
+    /* padding: 0.5em; */
+    font-size: 1.5em;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+
 }
+
+header img{
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+header img:hover{
+    transform: scale(1.2);
+}
+
+
+
 .qrcode-input {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -61,6 +61,7 @@ body {
 }
 
 input {
+    /* position: relative; */
     width: 232px;
     height: 40px;
     border: none;
@@ -76,6 +77,22 @@ input::placeholder {
 input:focus {
     outline: 1px solid tomato;
 }
+.btn-clear {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    border: none;
+    color: red;
+    font-size: 2em;
+    font-weight: bold;
+}
+.btn-clear:hover, .btn-clear:focus, .btn-clear:active {
+    transform: scale(1.2);
+    color: #c35441;
+}
+
 .btn-input {
     border: none;
     background-color: tomato;
@@ -93,8 +110,26 @@ input:focus {
     border-radius: 10px;
     box-shadow: 2px 2px 6px 1px rgba(255, 99, 71, 0.548);
     margin: 1em;
-    width: 232px;
-    height: 232px;
+    width: 174px;
+    height: 174px;
+}
+
+.btn-download {
+    background-color: tomato;
+    color: white;
+    border: none;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0.5em;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-download:hover {
+    background-color: rgb(213, 72, 47);
 }
 
 @media (max-width: 576px) {

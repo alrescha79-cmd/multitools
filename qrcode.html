@@ -12,20 +12,19 @@
 <body>
     <div class="qrcode">
         <div class="qrcode-teks">
-            <div class="flex">
-                <div class="back">
-                    <button class="btn-back"><img src="src/img/arrow-back.svg" alt=""></button>
-                </div>
-                <h1>Free Qr Code Generator</h1>
-            </div>
+                <header><img src="src/img/arrow-back.svg" alt=""> Free Qr Code Generator</header>
             <p>Generate Qr Code For Free</p>
         </div>
         <div class="qrcode-input">
 
             <input id="input-qr" type="text" placeholder="cth : cakson.mdbgo.io " onchange="generateQR()">
+            <button class="btn-clear" onclick="clear()">×</button>
+
             <input type="button" value="Generate" class="btn-input">
+
         </div>
         <canvas id="canvas-qr"></canvas>
+        <button class="btn-download" onclick="downloadQr()">Download</button>
     </div>
 
     <script src="src/qrcode.js"></script>
