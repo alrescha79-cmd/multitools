@@ -12,5 +12,5 @@ const preloader = document.getElementById('preload');
 window.addEventListener('load', () => {
     setTimeout(() => { 
         preloader.style.display = 'none';
-    }, 1500);
+    }, 700);
 } );
