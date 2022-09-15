@@ -10,5 +10,7 @@ menu.addEventListener('click', () => {
 const preloader = document.getElementById('preload');
 
 window.addEventListener('load', () => {
-    preloader.style.display = 'none';
+    setTimeout(() => { 
+        preloader.style.display = 'none';
+    }, 1500);
 } );
