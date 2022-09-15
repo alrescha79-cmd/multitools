@@ -10,5 +10,5 @@ menu.addEventListener('click', () => {
 const preloader = document.getElementById('preload');
 
 window.addEventListener('load', () => {
-    // preloader.style.display = 'none';
+    preloader.style.display = 'none';
 } );
