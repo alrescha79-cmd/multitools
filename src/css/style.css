@@ -22,6 +22,7 @@ body {
     height: 100%;
     background-color: rgb(68, 63, 63);
     z-index: 9999;
+    transition: all 0.3s ease-in-out;
 }
 
 .load {
